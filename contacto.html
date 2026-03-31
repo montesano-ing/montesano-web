@@ -7,7 +7,7 @@
   <title>Contacto y cotizaciones | MONTESANO | Ingeniería Hídrica</title>
   <meta
     name="description"
-    content="Cotizaciones y consultas en MONTESANO | Ingeniería Hídrica. Escríbenos por WhatsApp, formulario o correo electrónico."
+    content="Cotizaciones y consultas en MONTESANO | Ingeniería Hídrica. Escríbenos por WhatsApp o correo electrónico."
   />
 
   <link rel="canonical" href="https://www.montesano.cl/contacto.html" />
@@ -18,7 +18,7 @@
   <meta property="og:title" content="Contacto y cotizaciones | MONTESANO | Ingeniería Hídrica" />
   <meta
     property="og:description"
-    content="Escríbenos para cotizar o consultar por WhatsApp, formulario o correo electrónico."
+    content="Escríbenos por WhatsApp o correo electrónico para consultas y cotizaciones."
   />
   <meta property="og:url" content="https://www.montesano.cl/contacto.html" />
   <meta property="og:image" content="https://www.montesano.cl/assets/img/og-cover.jpg" />
@@ -31,50 +31,49 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 
   <style>
-    .contact-layout {
+    .contact-single {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .contact-hero-card {
+      padding: 28px;
+    }
+
+    .contact-methods {
       display: grid;
-      grid-template-columns: 1fr 1.35fr;
+      grid-template-columns: 1fr 1fr;
       gap: 24px;
+      margin-top: 22px;
       align-items: stretch;
     }
 
-    .contact-card {
+    .contact-method-card {
       height: 100%;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
 
-    .contact-card .contact-card-body {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
+    .contact-method-card p {
+      line-height: 1.75;
     }
 
-    .contact-form-grid {
-      display: grid;
-      gap: 14px;
+    .contact-email-box {
+      margin-top: 14px;
+      padding: 16px 18px;
+      border: 1px solid #e6e6e6;
+      border-radius: 14px;
+      background: rgba(0, 0, 0, 0.02);
     }
 
-    .contact-field label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: 600;
-    }
-
-    .contact-field input,
-    .contact-field select,
-    .contact-field textarea {
-      width: 100%;
-      padding: 12px 14px;
-      border: 1px solid #d9d9d9;
-      border-radius: 12px;
-      font: inherit;
-      background: #fff;
-      box-sizing: border-box;
-    }
-
-    .contact-field textarea {
-      resize: vertical;
+    .contact-email-address {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 1.08rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      word-break: break-word;
     }
 
     .contact-actions {
@@ -82,37 +81,43 @@
       gap: 10px;
       flex-wrap: wrap;
       align-items: center;
+      margin-top: 18px;
     }
 
     .contact-note-box {
-      margin-top: 14px;
-      padding: 14px 16px;
+      margin-top: 18px;
+      padding: 16px 18px;
       border: 1px solid #e6e6e6;
-      border-radius: 12px;
+      border-radius: 14px;
       background: rgba(0, 0, 0, 0.02);
-      line-height: 1.7;
+      line-height: 1.75;
     }
 
-    .contact-quick-list {
-      margin: 14px 0 0;
+    .contact-checklist {
+      margin: 10px 0 0;
       padding-left: 18px;
     }
 
-    .contact-quick-list li {
+    .contact-checklist li {
       margin-bottom: 8px;
     }
 
     .contact-cta-row {
-      margin-top: 16px;
+      margin-top: 18px;
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: center;
     }
 
     @media (max-width: 900px) {
-      .contact-layout {
+      .contact-methods {
         grid-template-columns: 1fr;
+      }
+
+      .contact-hero-card {
+        padding: 22px;
       }
     }
   </style>
@@ -135,7 +140,7 @@
         <a data-nav href="servicios.html">Servicios</a>
         <a data-nav href="parcelaciones-puerto-varas.html">Parcelaciones</a>
         <a data-nav href="contacto.html" aria-current="page">Contacto</a>
-        <a class="btn primary" href="#formulario-contacto">Cotizar</a>
+        <a class="btn primary" href="#contacto-directo">Cotizar</a>
       </div>
     </nav>
   </header>
@@ -149,206 +154,96 @@
       </p>
     </section>
 
-    <section class="content">
-      <div class="card">
+    <section class="content" id="contacto-directo">
+      <div class="card contact-single contact-hero-card">
 
         <h2 style="margin-top:0;">Vías de contacto</h2>
-        <p class="small" style="line-height:1.75; margin-top:8px;">
-          Puedes escribirnos por WhatsApp para una consulta rápida, completar el formulario para una solicitud más formal
-          o contactarnos directamente por correo en
-          <a href="mailto:contacto@montesano.cl"><strong>contacto@montesano.cl</strong></a>.
+        <p class="small" style="line-height:1.8; margin-top:8px;">
+          Para consultas, evaluación inicial y cotizaciones, puedes escribirnos directamente por WhatsApp o por correo electrónico.
+          Hemos simplificado esta sección para que el contacto sea más claro, rápido y directo.
         </p>
 
-        <div class="contact-layout" style="margin-top:18px;">
+        <div class="contact-methods">
 
-          <!-- BLOQUE IZQUIERDO -->
-          <div class="card feature contact-card">
-            <div class="contact-card-body">
-              <h3 style="margin-top:0;">Consulta rápida</h3>
-
-              <p class="small" style="line-height:1.75; margin-top:6px;">
-                Si quieres una primera orientación o coordinar una conversación inicial, WhatsApp es la vía más directa.
+          <div class="card feature contact-method-card">
+            <div>
+              <h3 style="margin-top:0;">WhatsApp</h3>
+              <p class="small" style="margin-top:8px;">
+                Recomendado para una consulta rápida, coordinación inicial o una primera conversación sobre tu proyecto.
               </p>
 
-              <div style="margin-top:10px;">
-                <a
-                  class="btn"
-                  href="https://wa.me/56951484333?text=Hola%20MONTESANO%2C%20quisiera%20hacer%20una%20consulta."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Escribir por WhatsApp
-                </a>
-              </div>
-
-              <ul class="contact-quick-list small" style="line-height:1.7;">
+              <ul class="contact-checklist small">
+                <li>Consulta directa y ágil.</li>
                 <li>Útil para resolver dudas iniciales.</li>
-                <li>Recomendado para coordinar una llamada o visita.</li>
-                <li>Ideal si aún estás definiendo el alcance de tu proyecto.</li>
+                <li>Ideal para coordinar una llamada o siguiente paso.</li>
               </ul>
+            </div>
 
-              <hr class="sep" style="margin:18px 0;" />
-
-              <h3 style="margin-top:0;">Correo electrónico</h3>
-              <p class="small" style="line-height:1.75; margin-top:6px;">
-                Si necesitas enviar antecedentes, fotos, PDF, planos o información técnica, puedes escribirnos directamente.
-              </p>
-
-              <p style="margin-top:8px; margin-bottom:0;">
-                <a href="mailto:contacto@montesano.cl"><strong>contacto@montesano.cl</strong></a>
-              </p>
-
-              <div class="contact-actions" style="margin-top:12px;">
-                <a
-                  class="btn primary"
-                  href="mailto:contacto@montesano.cl?subject=Cotización%20%7C%20MONTESANO%20Ingeniería%20Hídrica"
-                >
-                  Abrir email
-                </a>
-
-                <button
-                  type="button"
-                  class="btn"
-                  onclick="copyEmail()"
-                >
-                  Copiar email
-                </button>
-              </div>
-
-              <div class="contact-note-box small">
-                <strong>Recomendación:</strong> si tu consulta requiere cotización, antecedentes técnicos o una revisión más ordenada,
-                conviene usar el formulario.
-              </div>
+            <div class="contact-actions">
+              <a
+                class="btn primary"
+                href="https://wa.me/56951484333?text=Hola%20MONTESANO%2C%20quisiera%20hacer%20una%20consulta."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Escribir por WhatsApp
+              </a>
             </div>
           </div>
 
-          <!-- BLOQUE DERECHO -->
-          <div class="card feature contact-card" id="formulario-contacto">
-            <div class="contact-card-body">
-              <h3 style="margin-top:0;">Solicita una evaluación inicial</h3>
-
-              <p class="small" style="line-height:1.75; margin-top:6px;">
-                Completa este formulario y te responderemos con próximos pasos, alcance sugerido y base para cotización si corresponde.
+          <div class="card feature contact-method-card">
+            <div>
+              <h3 style="margin-top:0;">Correo electrónico</h3>
+              <p class="small" style="margin-top:8px;">
+                Si tu consulta requiere más detalle o necesitas enviar antecedentes, planos, imágenes, PDF o información técnica,
+                te recomendamos escribirnos por correo.
               </p>
 
-              <form
-                action="https://formspree.io/f/TU_FORM_ID"
-                method="POST"
-                style="margin-top:16px;"
-              >
-                <div class="contact-form-grid">
-
-                  <div class="contact-field">
-                    <label for="nombre">Nombre</label>
-                    <input
-                      id="nombre"
-                      name="nombre"
-                      type="text"
-                      required
-                      placeholder="Tu nombre"
-                    />
-                  </div>
-
-                  <div class="contact-field">
-                    <label for="email">Email</label>
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      required
-                      placeholder="tunombre@correo.com"
-                    />
-                  </div>
-
-                  <div class="contact-field">
-                    <label for="telefono">Teléfono / WhatsApp</label>
-                    <input
-                      id="telefono"
-                      name="telefono"
-                      type="text"
-                      placeholder="+56 9 ..."
-                    />
-                  </div>
-
-                  <div class="contact-field">
-                    <label for="ubicacion">Ubicación del proyecto</label>
-                    <input
-                      id="ubicacion"
-                      name="ubicacion"
-                      type="text"
-                      placeholder="Comuna / sector"
-                    />
-                  </div>
-
-                  <div class="contact-field">
-                    <label for="tipo_proyecto">Tipo de proyecto</label>
-                    <select id="tipo_proyecto" name="tipo_proyecto">
-                      <option value="">Selecciona una opción</option>
-                      <option value="rural">Rural</option>
-                      <option value="urbano">Urbano</option>
-                      <option value="parcelacion">Parcelación</option>
-                      <option value="municipal">Municipal</option>
-                      <option value="empresa">Empresa</option>
-                      <option value="otro">Otro</option>
-                    </select>
-                  </div>
-
-                  <div class="contact-field">
-                    <label for="servicio">Tipo de consulta</label>
-                    <select id="servicio" name="servicio">
-                      <option value="">Selecciona una opción</option>
-                      <option value="abastecimiento_agua">Abastecimiento de agua</option>
-                      <option value="drenaje">Drenaje / aguas lluvias</option>
-                      <option value="saneamiento">Saneamiento</option>
-                      <option value="inundacion">Inundación / riesgo hídrico</option>
-                      <option value="factibilidad">Factibilidad / diagnóstico</option>
-                      <option value="otro">Otro</option>
-                    </select>
-                  </div>
-
-                  <div class="contact-field">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea
-                      id="mensaje"
-                      name="mensaje"
-                      rows="7"
-                      required
-                      placeholder="Cuéntanos brevemente tu caso, problema principal, antecedentes disponibles y plazo estimado."
-                    ></textarea>
-                  </div>
-
-                  <input type="hidden" name="_subject" value="Nueva consulta desde montesano.cl" />
-
-                  <div class="contact-actions">
-                    <button type="submit" class="btn primary">
-                      Enviar solicitud
-                    </button>
-                    <span class="small" style="opacity:.85;">
-                      Respuesta inicial en 24–48 h hábiles.
-                    </span>
-                  </div>
-                </div>
-              </form>
-
-              <div class="contact-note-box small">
-                <strong>Para orientarte mejor, idealmente incluye:</strong>
-                ubicación del proyecto, tipo de proyecto, problema principal, antecedentes disponibles y plazo estimado.
+              <div class="contact-email-box">
+                <div class="small" style="opacity:.85;">Correo de contacto</div>
+                <span class="contact-email-address">contacto@montesano.cl</span>
               </div>
+            </div>
 
-              <p class="small" style="margin-top:12px; opacity:.85; line-height:1.7;">
-                La información enviada se utiliza únicamente para responder tu consulta y evaluar el alcance del servicio.
-              </p>
+            <div class="contact-actions">
+              <button
+                type="button"
+                class="btn"
+                onclick="copyEmail()"
+                aria-label="Copiar correo electrónico"
+              >
+                Copiar correo
+              </button>
             </div>
           </div>
         </div>
 
-        <hr class="sep" />
+        <div class="contact-note-box small">
+          <strong>Para ayudarte mejor, idealmente incluye:</strong>
+          ubicación del proyecto, tipo de proyecto, problema principal, antecedentes disponibles y cualquier plazo relevante.
+        </div>
 
-        <h2>Qué pasa después</h2>
+        <div class="contact-cta-row">
+          <a class="btn primary" href="https://wa.me/56951484333?text=Hola%20MONTESANO%2C%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener noreferrer">
+            Hablar por WhatsApp
+          </a>
+          <button type="button" class="btn" onclick="copyEmail()">
+            Copiar email
+          </button>
+          <a class="btn" href="servicios.html">Ver servicios</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="card">
+        <h2 style="margin-top:0;">Qué pasa después</h2>
+
         <div class="grid3" style="margin-top:14px;">
           <div class="card feature">
             <h3>1) Revisión del caso</h3>
-            <p>Analizamos tu solicitud y revisamos si falta algún antecedente clave para definir bien el alcance.</p>
+            <p>Analizamos tu consulta y revisamos si falta algún antecedente clave para definir bien el alcance.</p>
           </div>
           <div class="card feature">
             <h3>2) Propuesta clara</h3>
@@ -359,23 +254,15 @@
             <p>Avanzamos con una base técnica ordenada, consistente y enfocada en decisión, permisos y/o ejecución.</p>
           </div>
         </div>
-
-        <div class="contact-cta-row">
-          <a class="btn primary" href="#formulario-contacto">Pedir cotización</a>
-          <a class="btn" href="https://wa.me/56951484333" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a class="btn" href="servicios.html">Ver servicios</a>
-        </div>
-
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
     <div class="container footerRow">
       <span>© <span id="y"></span> MONTESANO | Ingeniería Hídrica</span>
-      <span>
-        <a href="mailto:contacto@montesano.cl">contacto@montesano.cl</a>
-      </span>
+      <span>contacto@montesano.cl</span>
     </div>
 
     <div class="container" style="margin-top:10px;">
