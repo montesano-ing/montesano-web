@@ -33,5 +33,4 @@ Disallow: /
 
 # END Cloudflare Managed Content
 
-# Sitemap
 Sitemap: https://montesano.cl/sitemap.xml
