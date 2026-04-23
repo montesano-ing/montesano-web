@@ -24,33 +24,18 @@
 </head>
 <body>
 
-<header>
-  <nav class="nav">
-    <a class="brand" href="index.html" aria-label="Ir al inicio">
-      <img src="assets/img/logo-horizontal.png" alt="Montesano Ingeniería Hídrica" class="brand-logo" />
-    </a>
-    <div class="navlinks">
-      <a data-nav href="index.html">Inicio</a>
-      <a data-nav href="quienes-somos.html">Quiénes somos</a>
-      <a data-nav href="servicios.html">Servicios</a>
-      <a data-nav href="contacto.html">Contacto</a>
-    </div>
-    <button class="hamburger" aria-label="Menú" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-</header>
+<div id="header-placeholder"></div>
 
 <main>
 
-  <!-- ===== HERO: imagen real a pantalla completa ===== -->
+  <!-- ===== HERO ===== -->
   <section class="hero-full">
     <div class="hero-full-bg">
       <img src="assets/img/Humedal01.png" alt="Humedal diseñado por Montesano en el sur de Chile" class="hero-full-img" />
       <div class="hero-full-overlay"></div>
     </div>
     <div class="container hero-full-content">
-      <span class="eyebrow">Puerto Varas · Región de Los Lagos</span>
+      <span class="eyebrow">Sur de Chile</span>
       <h1>El agua como parte<br>del paisaje</h1>
       <p class="hero-lead">Diseñamos lagunas, humedales y sistemas hídricos que pertenecen al lugar.</p>
       <div class="hero-actions">
@@ -66,18 +51,18 @@
     </div>
   </section>
 
-  <!-- ===== ¿PARA QUIÉN? ===== -->
+  <!-- ===== PARA QUIÉN ===== -->
   <section class="section-gap container">
     <div class="section-header">
       <div class="section-label">
         <div class="label-line"></div>
-        <span>Nuestros proyectos</span>
+        <span>Para quién trabajamos</span>
       </div>
-      <h2>Diseñamos para quien valora<br>el agua como parte del lugar</h2>
+      <h2>¿Te identificas?</h2>
     </div>
 
     <div class="clients-grid">
-      <div class="client-card">
+      <div class="client-card client-card-featured">
         <div class="client-dot"></div>
         <div>
           <strong>Tienes una parcela o predio rural</strong>
@@ -122,9 +107,6 @@
     </div>
   </section>
 
-  <!-- ===== PROYECTO DESTACADO ===== -->
- 
-
   <!-- ===== SERVICIOS ===== -->
   <section class="section-gap services-highlight">
     <div class="container">
@@ -137,37 +119,37 @@
       </div>
 
       <div class="services-grid">
-        <a href="parcelaciones-puerto-varas.html" class="svc-card svc-featured">
+        <a href="servicios.html#lagunas" class="svc-card svc-featured">
           <div class="svc-number">—</div>
           <h3>Lagunas, Humedales<br>y Piscinas Naturales</h3>
           <p>Diseñamos sistemas hídricos que integran el agua al paisaje del predio. El resultado eleva el valor del lugar y funciona con el territorio, no contra él.</p>
           <div class="svc-arrow">→</div>
         </a>
-        <a href="servicios.html" class="svc-card">
+        <a href="servicios.html#drenaje" class="svc-card">
           <div class="svc-number">—</div>
           <h3>Drenaje predial<br>y aguas lluvias</h3>
           <p>Diseñamos sistemas de drenaje duraderos para predios y parcelaciones. Caminos protegidos, suelos secos y escorrentía controlada durante todo el invierno.</p>
           <div class="svc-arrow">→</div>
         </a>
-        <a href="servicios.html" class="svc-card">
+        <a href="servicios.html#agua" class="svc-card">
           <div class="svc-number">—</div>
           <h3>Seguridad hídrica<br>y abastecimiento</h3>
           <p>Evaluamos la disponibilidad real del predio — pozos, vertientes y captaciones — y diseñamos el sistema que garantiza agua de calidad en todas las estaciones.</p>
           <div class="svc-arrow">→</div>
         </a>
-        <a href="servicios.html" class="svc-card">
+        <a href="servicios.html#saneamiento" class="svc-card">
           <div class="svc-number">—</div>
           <h3>Saneamiento<br>particular</h3>
           <p>Definimos la solución sanitaria correcta según el suelo y el uso del predio: bien ubicada, bien dimensionada y sin problemas de operación a largo plazo.</p>
           <div class="svc-arrow">→</div>
         </a>
-        <a href="servicios.html" class="svc-card">
+        <a href="servicios.html#hidrologia" class="svc-card">
           <div class="svc-number">—</div>
           <h3>Estudios hidrológicos<br>y riesgo hídrico</h3>
           <p>Análisis técnico de caudales, inundaciones y amenazas hídricas. Información precisa para tomar decisiones de inversión y obtener permisos con respaldo sólido.</p>
           <div class="svc-arrow">→</div>
         </a>
-        <a href="servicios.html" class="svc-card">
+        <a href="servicios.html#asesoria" class="svc-card">
           <div class="svc-number">—</div>
           <h3>Revisión técnica<br>y asesoría</h3>
           <p>Evaluamos proyectos existentes, revisamos informes y emitimos una segunda opinión independiente. Útil antes de invertir, comprar un terreno o iniciar una obra.</p>
@@ -187,8 +169,11 @@
       <div class="cta-content">
         <span class="eyebrow">Primer paso</span>
         <h2>Cuéntanos tu proyecto</h2>
-        <p>Una conversación inicial es suficiente para orientarte. Respondemos en 24 horas.</p>
+        <p>Una conversación inicial es suficiente para orientarte.</p>
         <a class="btn primary" href="contacto.html">Escribirnos por correo</a>
+        <p style="margin-top:16px; font-size:.8rem; color:var(--muted2);">
+          Trabajamos de forma remota en todo Chile.<br>Visitas a terreno según requerimiento del proyecto.
+        </p>
       </div>
       <div class="cta-deco">
         <div class="cta-ring cta-ring-1"></div>
@@ -200,33 +185,7 @@
 
 </main>
 
-<footer class="footer">
-  <div class="container footer-inner">
-    <div class="footer-brand-col">
-      <img src="assets/img/logo-horizontal.png" alt="Montesano" class="footer-logo" />
-      <p class="footer-tagline">Ingeniería hídrica con criterio territorial.<br>Puerto Varas, Chile.</p>
-    </div>
-    <div class="footer-nav-col">
-      <span class="footer-col-title">Páginas</span>
-      <a href="index.html">Inicio</a>
-      <a href="quienes-somos.html">Quiénes somos</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="contacto.html">Contacto</a>
-    </div>
-    <div class="footer-contact-col">
-      <span class="footer-col-title">Contacto</span>
-      <a href="mailto:contacto@montesano.cl">contacto@montesano.cl</a>
-      <span class="footer-legal">Puerto Varas, Chile</span>
-    </div>
-  </div>
-  <div class="container footer-bottom">
-    <span>© <span id="y"></span> MONTESANO | Ingeniería Hídrica</span>
-  </div>
-</footer>
-
+<div id="footer-placeholder"></div>
 <script src="assets/js/main.js"></script>
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>

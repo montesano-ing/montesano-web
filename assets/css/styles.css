@@ -340,6 +340,20 @@ header {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   transition: border-color .25s, background .25s;
+  .client-card-featured {
+  border-color: rgba(61,122,92,.35);
+  background: linear-gradient(135deg, rgba(61,122,92,.1), rgba(61,122,92,.05));
+  grid-column: span 1;
+}
+
+.client-card-featured .client-dot {
+  box-shadow: 0 0 8px var(--moss-light);
+}
+
+.client-card-featured strong {
+  color: var(--text);
+  font-size: 1rem;
+}
 }
 .client-card:hover {
   border-color: rgba(61,122,92,.35);
@@ -820,6 +834,33 @@ header {
   opacity: 1;
   transform: none;
 }
+/* Bullets clickeables en servicios */
+.svc-bullet-link {
+  text-decoration: none;
+  justify-content: space-between;
+}
+.svc-bullet-link:hover {
+  border-left-color: var(--moss-light);
+  background: var(--card-hover);
+  color: var(--text);
+}
+.svc-bullet-arrow {
+  font-size: 1rem;
+  color: var(--moss-light);
+  opacity: 0;
+  flex-shrink: 0;
+  transition: opacity .2s, transform .2s;
+  transform: translateX(-4px);
+}
+.svc-bullet-link:hover .svc-bullet-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Compensar header fijo al hacer scroll a ancla */
+[id] {
+  scroll-margin-top: 90px;
+}
 
 /* ============================================================ RESPONSIVE */
 @media (max-width: 960px) {
@@ -868,3 +909,45 @@ header {
   .navlinks a             { border-radius: 0; padding: .72rem var(--pad); width: 100%; }
   .navlinks .btn          { margin: 8px var(--pad) 0; border-radius: 999px; width: auto; }
 }
+
+/* ===== TRANSICIÓN ENTRE PÁGINAS ===== */
+body {
+  animation: pageFadeIn .4s ease forwards;
+}
+
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+body.page-leaving {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.tag-link {
+  transition: border-color .2s, color .2s, background .2s;
+  cursor: pointer;
+}
+.tag-link:hover {
+  border-color: var(--moss-light);
+  color: var(--text);
+  background: var(--moss-dim);
+}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 0 0;
+  font-size: .8rem;
+  color: var(--muted2);
+}
+.breadcrumb a {
+  color: var(--muted);
+  transition: color .2s;
+}
+.breadcrumb a:hover { color: var(--text); }
+.breadcrumb span { color: var(--muted2); }
