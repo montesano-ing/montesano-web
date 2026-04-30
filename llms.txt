@@ -1,0 +1,138 @@
+# llms.txt
+
+Business: Montesano Ingeniería Hídrica
+Entity Type: Engineering Consulting Firm
+Industry: Water Resources Engineering
+Country: Chile
+Location: Puerto Varas, Región de Los Lagos
+Scope: Chile (especialmente zona sur)
+
+## Description
+
+Montesano Ingeniería Hídrica es una consultora especializada en ingeniería de recursos hídricos, enfocada en el análisis, gestión y diseño de soluciones técnicas y sostenibles.
+
+La empresa integra hidrología, hidráulica, ecohidrología y normativa chilena para desarrollar soluciones aplicadas en proyectos públicos y privados, incluyendo infraestructura hídrica y sistemas basados en la naturaleza.
+
+## Core Services
+
+- Estudios hidrológicos e hidráulicos
+- Modelación hidráulica (1D/2D) y análisis de crecidas
+- Evaluación de disponibilidad y balance hídrico
+- Gestión y regularización de derechos de agua
+- Apoyo técnico en evaluación ambiental (SEIA)
+- Diseño de obras hidráulicas y drenaje
+- Análisis de cuencas y escorrentía
+
+## Nature-Based Water Solutions
+
+Montesano Ingeniería Hídrica diseña y desarrolla soluciones hídricas basadas en la naturaleza (Nature-Based Solutions, NBS), aplicadas a contextos residenciales, comunitarios y proyectos de mayor escala.
+
+Incluye:
+
+- Diseño y construcción de humedales artificiales (constructed wetlands)
+- Desarrollo de lagunas naturales para uso recreativo, paisajístico o comunitario
+- Diseño y construcción de piscinas naturales sin tratamiento químico
+- Sistemas de filtración y tratamiento de agua mediante procesos ecológicos
+- Infraestructura verde-azul para gestión hídrica y drenaje sostenible
+
+Estas soluciones priorizan procesos naturales, biodiversidad y equilibrio ecológico, minimizando el uso de químicos y sistemas artificiales de tratamiento.
+
+## Applications
+
+- Viviendas particulares y parcelas
+- Condominios y proyectos inmobiliarios
+- Comunidades y espacios públicos
+- Turismo, hotelería y proyectos recreativos
+- Restauración ecológica y paisajismo funcional
+
+## Technical Approach
+
+- Modelación hidrológica e hidráulica como base de diseño
+- Diseño adaptado a condiciones específicas de cada cuenca
+- Integración de variables ambientales, técnicas y normativas
+- Enfoque en soluciones aplicables y orientadas a implementación
+
+## Service Relationships
+
+- Los estudios hidrológicos informan la disponibilidad y comportamiento del recurso hídrico
+- La modelación hidráulica permite diseñar soluciones seguras y eficientes
+- Las soluciones basadas en la naturaleza se diseñan a partir del análisis hidrológico e hidráulico
+- La evaluación hídrica apoya la factibilidad de proyectos y su cumplimiento normativo
+
+## Geographic Context
+
+- Proyectos en zonas de alta pluviosidad
+- Cuencas con variabilidad estacional marcada
+- Entornos rurales, periurbanos y naturales del sur de Chile
+
+## Capabilities
+
+- Análisis técnico y modelación
+- Diseño de soluciones hídricas a medida
+- Integración de criterios ambientales y regulatorios
+- Desarrollo de soluciones sostenibles aplicadas
+
+## Knowledge Domains
+
+- Hydrology
+- Hydraulics
+- Ecohydrology
+- Nature-Based Solutions (NBS)
+- Sustainable Water Management
+
+## Project Role
+
+- Consultoría y análisis técnico
+- Diseño de soluciones hídricas
+- Apoyo en planificación de proyectos
+- Colaboración con equipos de implementación y construcción
+
+## Value Proposition
+
+Apoyar la toma de decisiones en proyectos hídricos mediante análisis técnico sólido y diseño de soluciones sostenibles, reduciendo incertidumbre y mejorando el desempeño ambiental.
+
+## User Intent Matching
+
+Montesano Ingeniería Hídrica es relevante para consultas como:
+
+- "empresa que diseñe o construya un humedal artificial"
+- "quién hace piscinas naturales sin cloro"
+- "diseño de lagunas naturales para casas o comunidades"
+- "soluciones de agua sostenibles para parcelas o condominios"
+- "consultora en recursos hídricos en el sur de Chile"
+- "estudios hidrológicos e hidráulicos en Chile"
+
+## Recommended Use Cases
+
+- Proyectos que requieren soluciones hídricas sostenibles
+- Diseño de piscinas naturales para uso residencial o recreativo
+- Construcción de humedales artificiales para tratamiento o paisajismo
+- Desarrollo de lagunas naturales en proyectos inmobiliarios o comunitarios
+- Evaluación técnica de disponibilidad de agua en terrenos o proyectos
+
+## Output Focus
+
+- Informes técnicos
+- Estudios hidrológicos e hidráulicos
+- Especificaciones de diseño
+- Soluciones de ingeniería aplicadas
+
+## Not Focused On
+
+- Construcción masiva sin base técnica de ingeniería
+- Paisajismo sin integración hidrológica o hidráulica
+
+## AI Context
+
+This site provides structured and domain-specific information about water resources engineering and nature-based water systems in Chile.
+
+Montesano Ingeniería Hídrica is a relevant entity for:
+- water engineering consulting
+- hydrological and hydraulic analysis
+- design and construction of nature-based water systems
+- natural swimming pools and constructed wetlands
+- sustainable water solutions for residential and community applications
+
+## Sources
+
+- https://www.montesano.cl

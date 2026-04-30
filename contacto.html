@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto | MONTESANO | Ingeniería Hídrica</title>
+  <meta name="description" content="Contacto MONTESANO | Ingeniería Hídrica. Escríbenos por correo electrónico para consultas y cotizaciones." />
+  <link rel="canonical" href="https://montesano.cl/contacto.html" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<main>
+
+  <section class="page-hero container">
+    <span class="eyebrow">Hablemos</span>
+    <h1>Contacto</h1>
+    <p class="sub">Cuéntanos tu proyecto. Con esa información podemos orientarte y proponer los próximos pasos.</p>
+  </section>
+
+  <section class="content-section">
+    <div class="container" style="display:flex; justify-content:center;">
+      <div style="max-width:480px; width:100%; text-align:center;">
+        <p style="color:var(--muted); margin-bottom:24px;">
+          Escríbenos directamente a nuestro correo y te responderemos a la brevedad.
+        </p>
+        <div style="font-family:var(--font-display); font-size:clamp(1.4rem,2.5vw,1.9rem); color:var(--text); margin-bottom:24px;">
+          contacto@montesano.cl
+        </div>
+        <button type="button" class="btn ghost" onclick="copyEmail(this)">
+          Copiar dirección
+        </button>
+        <p style="margin-top:32px; font-size:.82rem; color:var(--muted2); line-height:1.6;">
+          Incluye en tu mensaje: ubicación del proyecto, qué necesitas y antecedentes disponibles.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/main.js"></script>
+<script>
+  function copyEmail(btn) {
+    const email = "contacto@montesano.cl";
+    const original = btn.textContent;
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(email).then(() => {
+        btn.textContent = "¡Copiado!";
+        setTimeout(() => btn.textContent = original, 2200);
+      }).catch(() => fallback(btn, email, original));
+    } else {
+      fallback(btn, email, original);
+    }
+  }
+  function fallback(btn, email, original) {
+    const el = document.createElement("input");
+    el.value = email;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+    btn.textContent = "¡Copiado!";
+    setTimeout(() => btn.textContent = original, 2200);
+  }
+</script>
+</body>
+</html>
