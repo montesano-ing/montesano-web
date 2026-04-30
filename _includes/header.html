@@ -1,13 +1,27 @@
 <header>
   <nav class="nav">
-    <a class="brand" href="index" aria-label="Ir al inicio">
+    <a class="brand" href="index.html" aria-label="Ir al inicio">
       <img src="assets/img/logo-horizontal.png" alt="Montesano Ingeniería Hídrica" class="brand-logo" />
     </a>
     <div class="navlinks">
-      <a data-nav href="index">Inicio</a>
-      <a data-nav href="quienes-somos">Quiénes somos</a>
-      <a data-nav href="servicios">Servicios</a>
-      <a data-nav href="contacto">Contacto</a>
+      <a data-nav href="index.html">Inicio</a>
+      <a data-nav href="quienes-somos.html">Quiénes somos</a>
+
+      <div class="nav-dropdown">
+        <a data-nav href="servicios.html" class="nav-dropdown-trigger">
+          Servicios <span class="nav-dropdown-arrow">▾</span>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="servicios.html#lagunas">Lagunas, Humedales y Piscinas</a>
+          <a href="servicios.html#drenaje">Drenaje predial</a>
+          <a href="servicios.html#agua">Seguridad hídrica</a>
+          <a href="servicios.html#saneamiento">Saneamiento particular</a>
+          <a href="servicios.html#hidrologia">Estudios hidrológicos</a>
+          <a href="servicios.html#asesoria">Revisión técnica</a>
+        </div>
+      </div>
+
+      <a data-nav href="contacto.html">Contacto</a>
     </div>
     <button class="hamburger" aria-label="Menú" aria-expanded="false">
       <span></span><span></span><span></span>
