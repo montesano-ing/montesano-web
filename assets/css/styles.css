@@ -806,13 +806,14 @@ body.page-leaving {
 
 .nav-dropdown-menu {
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(6,15,25,.97);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 8px;
+  padding-top: 16px;
   min-width: 240px;
   display: none;
   flex-direction: column;
@@ -822,10 +823,18 @@ body.page-leaving {
   z-index: 200;
 }
 
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+
 .nav-dropdown:hover .nav-dropdown-menu {
   display: flex;
 }
-
 .nav-dropdown-menu a {
   padding: 10px 14px;
   border-radius: 8px;
