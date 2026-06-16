@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /contactos/
+
+Sitemap: https://montesano.cl/sitemap.xml
