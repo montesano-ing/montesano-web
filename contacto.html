@@ -35,24 +35,63 @@
 
           <div class="form-group">
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="name" required placeholder="Tu nombre" />
+            <input
+              type="text"
+              id="nombre"
+              name="name"
+              required
+              placeholder="Tu nombre"
+            />
           </div>
 
           <div class="form-group">
             <label for="correo">Correo electrónico</label>
-            <input type="email" id="correo" name="email" required placeholder="tu@correo.cl" />
+            <input
+              type="email"
+              id="correo"
+              name="email"
+              required
+              placeholder="tu@correo.cl"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Número de contacto</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="phone"
+              required
+              placeholder="+56 9 1234 5678"
+              pattern="^\+?[0-9\s]{8,15}$"
+              title="Ingresa un número válido"
+            />
           </div>
 
           <div class="form-group">
             <label for="mensaje">Cuéntanos tu proyecto</label>
-            <textarea id="mensaje" name="message" required rows="5" placeholder="Qué necesitas, ubicación aproximada, antecedentes disponibles..."></textarea>
+            <textarea
+              id="mensaje"
+              name="message"
+              required
+              rows="5"
+              placeholder="Qué necesitas, ubicación aproximada, antecedentes disponibles..."
+            ></textarea>
           </div>
 
-          <button type="submit" class="btn primary">Enviar consulta</button>
-          <p class="form-note">Tu información se usa exclusivamente para responder tu consulta y no se comparte con terceros.</p>
+          <button type="submit" class="btn primary">
+            Enviar consulta
+          </button>
+
+          <p class="form-note">
+            Tu información se usa exclusivamente para responder tu consulta y no se comparte con terceros.
+          </p>
         </form>
 
-        <p class="contact-alt">También puedes escribirnos directamente a <a href="mailto:contacto@montesano.cl">contacto@montesano.cl</a></p>
+        <p class="contact-alt">
+          También puedes escribirnos directamente a
+          <a href="mailto:contacto@montesano.cl">contacto@montesano.cl</a>
+        </p>
 
       </div>
     </div>
@@ -62,5 +101,6 @@
 
 <div id="footer-placeholder"></div>
 <script src="assets/js/main.js"></script>
+
 </body>
 </html>
